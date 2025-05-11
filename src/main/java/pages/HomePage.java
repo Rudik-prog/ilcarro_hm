@@ -18,12 +18,9 @@ public class HomePage {
         driver.findElement(By.xpath("//a[text()='Log in']")).click();
     }
 
-    public void verifyUserLoggedIn() {
-        new WebDriverWait(driver, Duration.ofSeconds(10))
-                .until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h2[contains(text(),'Find your car')]")));
+
     }
 
-    public void navigateToAddCarPage() {
-        driver.findElement(By.xpath("//a[contains(text(),'Let')]")).click();
+
     }
 }

@@ -25,15 +25,6 @@ public class AddCarPage {
         driver.findElement(By.id("class")).sendKeys(data.get("class"));
         driver.findElement(By.id("price")).sendKeys(data.get("price"));
         driver.findElement(By.id("about")).sendKeys(data.get("about"));
-    }
-
-    public void uploadPhoto(String absoluteFilePath) {
-        driver.findElement(By.id("photos")).sendKeys(absoluteFilePath);
-    }
-
-    public void submitCarForm() {
-        driver.findElement(By.cssSelector("button[type='submit']")).click();
-    }
 
 
 }
